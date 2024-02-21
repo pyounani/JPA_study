@@ -16,15 +16,15 @@ public class ItemService {
     private final ItemRepository itemRepository;
 
     @Transactional
-    private void save(Item item) {
+    public void save(Item item) {
         itemRepository.save(item);
     }
 
-    private List<Item> findItems() {
+    public List<Item> findItems() {
         return itemRepository.findAll();
     }
 
-    private Item findOne(Long itemId) {
+    public Item findOne(Long itemId) {
         return itemRepository.findOne(itemId);
     }
 }
