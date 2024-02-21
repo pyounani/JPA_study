@@ -37,9 +37,8 @@ out/
 .vscode/
 
 #etc
-.gradle
 build
-.idea
 
 ### application ###
 /src/main/resources/application.yml
+/src/test/resources/application.yml
