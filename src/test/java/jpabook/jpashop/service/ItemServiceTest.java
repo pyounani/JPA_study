@@ -25,6 +25,9 @@ public class ItemServiceTest {
         Item book = new Book();
         book.setName("book");
 
+        itemService.save(book);
+
+        assertEquals(1, itemRepository.findAll().size());
     }
 
 
